@@ -1,28 +1,36 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <AdaptiveTempl />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import AdaptiveTempl from './components/AdaptiveTempl.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    AdaptiveTempl
   }
 }
 </script>
 
 <style>
+@import './styles/style.css';
+
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  /* background-color: #ebd5b3;  https://encycolorpedia.ru/f2eecb*/
+  background-color: #f2eecb;
+  height: 100%;
+
+}
+body {
+  margin: 0;
+}
+
+html,
+body {
+	height: 100%;
 }
 </style>
